@@ -1,0 +1,19 @@
+.tituloContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.tituloContainer h3 {
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 60px;
+    padding-left: 30px;
+    letter-spacing: 5px;
+    text-align: center
+}
+

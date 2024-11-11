@@ -1,0 +1,44 @@
+.noticiaPageContainer {
+    background: url("https://i.pinimg.com/564x/37/8a/8c/378a8c6dbab958d25a09acac806546ec.jpg");
+    padding: 2% 2%;
+}
+
+.backGroundNoticia {
+    background-color: rgba(0, 0, 0, 0.561);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.noticiaPageContainer h3 {
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    text-shadow: 1px 1px red;
+}
+
+.noticiaPageContainer p {
+    text-align: justify;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.noticiaPageContainer h5 {
+    color: rgb(173, 62, 62);
+}
+
+.imagenUno {
+    width:400px;
+    height:400px;
+    float: right;
+    margin: 15px 0px 15px 15px;
+    border-radius: 10px;
+}
+
+.imagenDos {
+    width:400px;
+    height:400px;
+    float: left;
+    margin: 15px 15px 15px 0px;
+    border-radius: 10px;
+}

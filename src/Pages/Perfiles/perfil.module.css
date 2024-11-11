@@ -1,0 +1,93 @@
+.perfilContainer {
+    background: url("https://i.pinimg.com/564x/b4/41/0d/b4410d2c05e83701276954bb95ebef22.jpg");
+    padding: 10px 0px;
+}
+
+.datosGenerales {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.fichaDeDatosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fichaDeDatos {
+background: url("https://i.pinimg.com/564x/16/e3/07/16e307a6a47ccb14a57bebd93081f142.jpg");
+background-size: 100%;
+width: 650px;
+height: 500px;
+border-radius: 10px;
+padding: 20px;
+}
+
+.fichaDeDatos ul {
+    display: flex;
+    gap: 10px;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fichaDeDatos p {
+    text-decoration:underline;
+    text-underline-position: under;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.fichaDeDatos em {
+ font-weight: bolder;
+ text-decoration: none;
+ font-size: large;
+}
+
+.resumenDeVidaContainer {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumenDeVida {
+background-color: rgba(17, 18, 19, 0.557);
+color: whitesmoke;
+padding: 10px 20px;
+}
+
+.resumenDeVida h1 {
+    font-family: "Bebas Neue";
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.resumenDeVida h4 {
+    color: rgb(170, 28, 28);
+    font-family: "Bebas Neue";
+    font-size: 28px;
+}
+
+.resumenDeVida p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.imagenUno {
+    width:400px;
+    height:400px;
+    float: right;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.imagenDos {
+    width:400px;
+    height:400px;
+    float: left;
+    margin-right: 15px;
+    border-radius: 10px;
+}

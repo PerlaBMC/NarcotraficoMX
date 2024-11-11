@@ -1,0 +1,13 @@
+.containerOrg {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 30px;
+    padding: 10px 30px;
+    background-color: black;
+}
+
+.containerOrg img {
+ width: 150px;
+}

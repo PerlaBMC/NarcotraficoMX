@@ -1,0 +1,15 @@
+.crimeflixSection {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+.crimeflixSection iframe {
+    width: 50%;
+    height: 600px;
+}
+
+.crimeflixSection img {
+    width: 30%;
+}

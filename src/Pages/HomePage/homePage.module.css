@@ -1,0 +1,38 @@
+.HomePageContainer {
+    background-color: black;
+}
+
+.BannerHomePage {
+    background-color: black;
+    color: azure;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.descripcion {
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.descripcion em {
+    font-weight: bolder;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.HomePageContainer h1 {
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 40px;
+    padding-left: 30px;
+    letter-spacing: 5px;
+}

@@ -1,0 +1,9 @@
+.carruselItem {
+    height: 500px;
+    padding: 0 40px;
+}
+
+.carruselItem img {
+    width: 100%;
+    height: 100%;
+}

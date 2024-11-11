@@ -1,0 +1,60 @@
+.OrganizacionPageContainer {
+    background-color: black;
+}
+
+.bannerORg {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.logoORg img {
+    padding:30px;
+    width: 100%;
+}
+
+.mapaOrg img {
+    width: 100%;
+}
+
+.infOrg p {
+    color: aliceblue;
+    text-align: justify;
+    padding: 30px;
+    columns: 3;
+    gap: 50px;
+    font-size: large;
+    margin: 0%;
+}
+
+.organigramaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.organigramaContainer h3 {
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 60px;
+    padding-left: 30px;
+    letter-spacing: 5px;
+}
+
+.containerCelulas h3 {
+text-align: center;
+color: aliceblue;
+}
+
+.containerCelulas img {
+    width: 100%;
+}
+
+.cedulaCardsContainer {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 30px;
+}

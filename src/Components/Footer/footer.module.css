@@ -1,0 +1,56 @@
+.footerContainer {
+    background:repeating-linear-gradient(black, rgba(41, 40, 40, 0.862)); 
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding: 20px 10%; 
+    align-items: center;
+    justify-content: center;
+}
+
+.footerContainer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DirectorioPortales {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.DirectorioPortales a,
+.privacidad a {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.DirectorioPortales p,
+.privacidad p {
+font-size: 20px;
+letter-spacing: 2px;
+}
+
+
+.redes {
+    display: flex;
+    gap: 40px;
+}
+
+.instagram {
+color: lightsalmon ;
+font-size: 40px;
+}
+
+.tiktok {
+    color: ghostwhite ;
+    font-size: 40px;
+}
+
+.youtube {
+    color: red ;
+    font-size: 40px;
+}

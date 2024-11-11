@@ -1,0 +1,35 @@
+.noticiasContainer {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.noticiasContainer a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.cardNoticia {
+   background: url("https://i.pinimg.com/564x/47/0f/50/470f506c8863c47a52ebc00b3bcdbc8e.jpg");
+    width: 350px;
+    border-radius: 10px;
+}
+
+.cardNoticia img {
+    width: 100%;
+    padding: 10px;
+}
+
+.cardNoticia h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.cardNoticia p {
+    padding: 10px;
+    text-align: justify;
+    font-size: 20px;
+}

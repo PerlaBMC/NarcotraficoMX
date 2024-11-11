@@ -1,0 +1,17 @@
+.politicasContainer {
+    background-color: black;
+    padding: 2% 10%;
+}
+
+.politicasContainer p {
+ text-align: justify;
+ color: whitesmoke;
+}
+
+.politicasContainer h4 {
+    color: red;
+}
+
+.politicasContainer li{
+    margin: 10px 0px;
+}
