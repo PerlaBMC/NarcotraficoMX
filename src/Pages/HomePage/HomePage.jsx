@@ -1,8 +1,8 @@
 import styles from "./homePage.module.css"
 import Organizaciones from "../../Components/Organizaciones/Organizaciones";
 import MapaMexico from "../../Components/MapaMexico/MapaMexico";
-import Crimeflix from "../../Components/Crimeflix/crimeflix";
 import Noiticias from "../../Components/Noticias/Noiticias";
+import Crimeflix from "../../Components/Crimeflix/crimeflix";
 
 
 
