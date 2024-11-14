@@ -46,7 +46,6 @@ const HomePage = () => {
 					<MapaMexico/>
 				</section>
 				<section>
-
 					<Organizaciones/>
 				</section>
 				<section>

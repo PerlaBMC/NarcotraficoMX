@@ -20,16 +20,20 @@
 
 .cardNoticia img {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
 }
 
 .cardNoticia h3 {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.761);
+    margin: 0px 4px;
 }
 
 .cardNoticia p {
     padding: 10px;
     text-align: justify;
-    font-size: 20px;
+    font-size: 18px;
+    margin: 0%;
 }

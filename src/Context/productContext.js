@@ -1,5 +1,5 @@
 import { createContext } from "react";
 
-const ProductContext = createContext();
+const OrgContext = createContext();
 
-export default ProductContext;
+export default OrgContext;

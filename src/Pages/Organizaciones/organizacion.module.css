@@ -41,6 +41,8 @@
     font-size: 60px;
     padding-left: 30px;
     letter-spacing: 5px;
+    width: 100%;
+    text-align: center;
 }
 
 .containerCelulas h3 {

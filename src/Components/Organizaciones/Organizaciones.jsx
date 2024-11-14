@@ -1,22 +1,22 @@
 import styles from "./organizaciones.module.css"
 import { useContext, useEffect } from "react";
-import ProductContext from "../../Context/productContext";
+import OrgContext from "../../Context/productContext";
 import { Link } from "react-router-dom";
 
 const Organizaciones = () => {
-    const { getProducts, products } = useContext(ProductContext);
+    const { getOrganizaciones, organizaciones } = useContext(OrgContext);
 	useEffect(() => {
-		getProducts();
-	}, [getProducts]);
+		getOrganizaciones();
+	}, [getOrganizaciones]);
 
   return (
     <>
     <div className={styles.containerOrg}>
         {
-            products.map ((product) => (
-                <div key={product.id}>
-                    <Link to={`/Org/${product.id}`}>
-                        <img src={product.imagen} alt="" />
+            organizaciones.map ((org) => (
+                <div key={org.id}>
+                    <Link to={`/Org/${org.id}`}>
+                        <img src={org.imagen} alt="Logo Org" />
                     </Link>
                 </div>
             )

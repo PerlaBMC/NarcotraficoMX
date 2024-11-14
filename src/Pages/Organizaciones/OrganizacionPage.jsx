@@ -1,45 +1,45 @@
 import { useContext, useEffect } from "react";
-import ProductContext from "../../Context/productContext";
+import OrgContext from "../../Context/productContext";
 import { useParams } from "react-router-dom";
 import styles from "./organizacion.module.css";
 import TituloDeSeccion from "../../Components/TituloDeSección/TituloDeSeccion";
-import CardCedula from "../../Components/CardCedula/CardCedula";
+import CardCedula from "../../Components/Organizaciones/CardCedula";
+import Organigrama from "../../Components/Organigrama/Organigrama";
 
 const OrganizacionPage = () => {
-	const { getProduct, product } = useContext(ProductContext);
+	const { getOrganizacion, org } = useContext(OrgContext);
 	const { id } = useParams();
-	//console.log(id);
 
 	useEffect(() => {
-		getProduct(id);
-		//console.log(getProduct);
-	}, [getProduct, id]);
+		getOrganizacion(id);
+	}, [getOrganizacion, id]);
 
 	return (
 		<>
 			<div className={styles.OrganizacionPageContainer}>
-				{product.id && (
+				{org.id && (
 					<div className={styles.OrganizacionPageContainer}>
 						<section className={styles.bannerORg}>
 							<div className={styles.logoORg}> 
-								<img src={product.imagen} alt="" />
+								<img src={org.imagen} alt="Logo de Org" />
 							</div>
 							<div className={styles.mapaOrg}>
-								<img src={product.mapaExpansionTerritorial} alt="" />
+								<img src={org.mapaExpansionTerritorial} alt="Mapa de expansión territorial" />
 							</div>
 						</section>
 						<section className={styles.infOrg}>
-							<p>{product.Descripcion}</p>
+							<p>{org.Descripcion}</p>
 						</section>
 						<section className={styles.organigramaContainer}>
 							<h3>Organigrama</h3>
-							
+							{/* Pasamos el nombre de la organización como prop */}
+							<Organigrama nombreOrganizacion={org.nombreOrganizacion} />
 						</section>
 						<section className={styles.containerCelulas}>
 							<TituloDeSeccion titulo="Zona de influencia por células"/>
-							<img src={product.celulasCriminales.mapaDeExpansionTerritorial} alt="" />
+							<img src={org.celulasCriminales.mapaDeExpansionTerritorial} alt="Mapa expansión territorial por células" />
 							<div className={styles.cedulaCardsContainer}>
-							<CardCedula/>
+								<CardCedula/>
 							</div>
 						</section>
 					</div>
@@ -50,3 +50,4 @@ const OrganizacionPage = () => {
 };
 
 export default OrganizacionPage;
+               

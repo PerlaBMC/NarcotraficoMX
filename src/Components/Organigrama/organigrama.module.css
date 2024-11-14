@@ -1,0 +1,49 @@
+.organigramaContainer {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 60px;
+}
+
+.enlacePerfil {
+    text-decoration: none;
+}
+
+.cardMiembro {
+    width: 250px;
+    height: 350px;
+    border: 2px solid;
+    border-color: aliceblue;
+}
+
+.fotoMiembro {
+    height: 220px;
+}
+
+.cardMiembro img {
+    width: 100%;
+    height: 100%;
+}
+
+.nombreMiembro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.nombreMiembro h2,
+.nombreMiembro h3,
+.nombreMiembro p {
+color: aliceblue;
+font-size: 15px;
+text-align: center;
+width: 100%;
+padding: 0%;
+}
+
+.nombreMiembro h3 {
+    color: brown;
+}
