@@ -1,4 +1,4 @@
-import styles from "./noticiaPAge.module.css";
+import styles from "./noticiaPage.module.css";
 import { useContext, useEffect } from "react";
 import OrgContext from "../../Context/productContext";
 import { useParams } from "react-router-dom";
