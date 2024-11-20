@@ -8,6 +8,7 @@ import OrganizacionPage from "../Pages/Organizaciones/OrganizacionPage";
 import Perfil from "../Pages/Perfiles/Perfil";
 import PoliticasDePrivacidad from "../Pages/PoliticasDePrivacidad/PoliticasDePrivacidad";
 import NoticiaPage from "../Pages/NoticiaPage/NoticiaPage";
+import NoticieroPage from "../Pages/NoticieroPage/NoticieroPage";
 
 
 
@@ -23,6 +24,7 @@ const AppRouter = () => {
 				<Route path="/Perfil/:id" element={<Perfil/>}/>
 				<Route path="/Politicas" element={<PoliticasDePrivacidad/>}/>
 				<Route path="/Noticia/:id" element={<NoticiaPage/>}/>
+				<Route path="/Noticiero" element={<NoticieroPage/>}/>
 			</Routes>
             <Footer/>
 		</BrowserRouter>

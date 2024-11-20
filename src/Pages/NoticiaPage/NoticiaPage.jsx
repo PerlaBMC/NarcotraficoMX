@@ -2,6 +2,7 @@ import styles from "./noticiaPage.module.css";
 import { useContext, useEffect } from "react";
 import OrgContext from "../../Context/productContext";
 import { useParams } from "react-router-dom";
+import Crimeflix from "../../Components/Crimeflix/Crimeflix";
 
 const NoticiaPage = () => {
 	const { getNoticia, noticia } = useContext(OrgContext);
@@ -41,7 +42,10 @@ const NoticiaPage = () => {
 						<h5>{noticia.Noticia.subtituloSeis} </h5>
 						<p>{noticia.Noticia.parrafoSeis}</p>
 						<h5>{noticia.Noticia.subtituloSiete} </h5>
-						<p>{noticia.Noticia.parrafoSiete}</p>
+						{typeof noticia.ImagenTres === "string" &&
+						noticia.ImagenTres.trim() !== "" ? (
+							<Crimeflix video={noticia.ImagenTres} />
+						) : null}
 					</div>
 				</div>
 			)}

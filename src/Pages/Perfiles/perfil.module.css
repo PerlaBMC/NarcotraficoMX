@@ -15,12 +15,12 @@
 }
 
 .fichaDeDatos {
-background: url("https://i.pinimg.com/564x/16/e3/07/16e307a6a47ccb14a57bebd93081f142.jpg");
-background-size: 100%;
-width: 650px;
-height: 500px;
-border-radius: 10px;
-padding: 20px;
+    background: url("https://i.pinimg.com/564x/16/e3/07/16e307a6a47ccb14a57bebd93081f142.jpg");
+    background-size: 100%;
+    width: 650px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .fichaDeDatos ul {
@@ -29,19 +29,22 @@ padding: 20px;
     font-family: "Courier Prime", monospace;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
+
 }
 
 .fichaDeDatos p {
-    text-decoration:underline;
+    text-decoration: underline;
     text-underline-position: under;
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 19px;
+
 }
 
 .fichaDeDatos em {
- font-weight: bolder;
- text-decoration: none;
- font-size: large;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: large;
 }
 
 .resumenDeVidaContainer {
@@ -52,9 +55,9 @@ padding: 20px;
 }
 
 .resumenDeVida {
-background-color: rgba(17, 18, 19, 0.557);
-color: whitesmoke;
-padding: 10px 20px;
+    background-color: rgba(17, 18, 19, 0.557);
+    color: whitesmoke;
+    padding: 10px 20px;
 }
 
 .resumenDeVida h1 {
@@ -77,17 +80,112 @@ padding: 10px 20px;
 }
 
 .imagenUno {
-    width:400px;
-    height:400px;
+    width: 400px;
+    height: 400px;
     float: right;
     margin-left: 15px;
     border-radius: 10px;
 }
 
 .imagenDos {
-    width:400px;
-    height:400px;
+    width: 400px;
+    height: 400px;
     float: left;
     margin-right: 15px;
     border-radius: 10px;
+}
+
+@media (min-width: 970px) and (max-width: 1250px) {
+    .fichaDeDatos {
+        width: 480px;
+    }
+
+    .fichaDeDatos ul {
+        padding: 0%;
+        display: block;
+    }
+
+    .fichaDeDatos em,
+    .fichaDeDatos p {
+        font-size: 15px;
+    }
+
+    .resumenDeVida p {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 970px) {
+    .resumenDeVida p {
+        font-size: 15px;
+    }
+
+    .fichaDeDatos {
+        width: 370px;
+        border-radius: 0%;
+    }
+
+    .fichaDeDatos em,
+    .fichaDeDatos p {
+        font-size: 13px;
+    }
+
+    .fichaDeDatos ul {
+        padding: 0%;
+        display: block;
+    }
+
+    .imagenDos,
+    .imagenUno {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (width <=749px) {
+    .datosGenerales {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fichaDeDatos {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .imagenDos,
+    .imagenUno {
+        width: 100%;
+        height: 100%;
+        margin: 10px 0px;
+    }
+
+    .fichaDeDatos em,
+    .fichaDeDatos p {
+        font-size: 15px;
+    }
+
+
+    .fichaDeDatos ul {
+        padding: 0%;
+        display: flow;
+    }
+
+    .resumenDeVidaContainer {
+        padding: 15px;
+    }
+
+    .resumenDeVida {
+        padding: 0%;
+    }
+
+    .resumenDeVida p {
+        font-size: 15px;
+    }
+
+    .resumenDeVida {
+        text-align: center;
+    }
 }

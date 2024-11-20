@@ -12,7 +12,7 @@ const Footer = () => {
     <a href="/Politicas"><p>Políticas de Privacidad</p></a>
     </div>
     <div className={styles.DirectorioPortales}> 
-    <a href="/">Portal de Noticia</a>
+    <a href="/"><p>Portal de Noticia</p></a>
     <a href="/"><p>Crimeflix</p></a>
     </div>
     <div className={styles.redes}>

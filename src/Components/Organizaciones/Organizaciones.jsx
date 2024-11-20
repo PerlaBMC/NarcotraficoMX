@@ -1,4 +1,4 @@
-import styles from "./organizaciones.module.css"
+import styles from "./organizaciones.module.css";
 import { useContext, useEffect } from "react";
 import OrgContext from "../../Context/productContext";
 import { Link } from "react-router-dom";

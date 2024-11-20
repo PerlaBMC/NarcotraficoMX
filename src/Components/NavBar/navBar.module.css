@@ -1,6 +1,5 @@
 .navBarContainer {
     background-color: black;
-    height: 100px;
     color: aliceblue;
     display: grid;
     grid-template-columns: 30% 70%;
@@ -41,4 +40,77 @@ font-family: "Bebas Neue";
 
 .menuNavBar a:hover {
     color: red;
+}
+
+.dropDownNavBar {
+    position: relative;
+    display: inline-block;
+}
+
+.dropDownContent {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.774);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropDownContent a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+
+.dropDownContent a:hover{
+    background-color: rgba(59, 55, 55, 0.361)
+}
+
+.dropDownNavBar:hover .dropDownContent {
+    display: block;
+}
+
+
+@media (min-width: 970px) and (max-width: 1250px) {
+    .navBarContainer{
+        grid-template-columns: 40% 60%;
+    }
+    .logoNavBar h1 {
+        font-size: 50px;
+        padding: 0%;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 970px) {
+    .navBarContainer{
+        grid-template-columns: 50% 50%;
+    }
+    .logoNavBar h1 {
+        font-size: 50px;
+    }
+}
+
+@media (width <=700px) {
+    .navBarContainer{
+        display: block;
+    }
+
+    .logoNavBar {
+        justify-content: center;
+        padding: 5px 0px;
+    }
+
+    .logoNavBar h1 {
+        padding: 0%;
+        font-size: 50px;
+    }
+
+    .menuNavBar{
+        justify-content:space-between;
+        padding: 0px 20px;
+        margin-bottom: 10px;
+    }
+
 }

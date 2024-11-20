@@ -20,6 +20,7 @@ const OrganizacionPage = () => {
 				{org.id && (
 					<div className={styles.OrganizacionPageContainer}>
 						<section className={styles.bannerORg}>
+							<h2>{org.nombreOrganizacion}</h2>
 							<div className={styles.logoORg}> 
 								<img src={org.imagen} alt="Logo de Org" />
 							</div>

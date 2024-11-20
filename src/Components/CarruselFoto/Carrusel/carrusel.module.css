@@ -1,9 +1,28 @@
 .carruselItem {
     height: 500px;
-    padding: 0 40px;
+    padding: 0px 40px;
 }
 
 .carruselItem img {
     width: 100%;
     height: 100%;
+}
+
+@media (min-width: 970px) and (max-width: 1250px) {
+.carruselItem {
+    padding: 0px 20px;
+}
+}
+
+@media (min-width: 750px) and (max-width: 970px) {
+.carruselItem {
+    padding: 0px 5px;
+}
+
+}
+
+@media (width <=749px) {
+    .carruselItem {
+        padding: 0%;
+    }
 }

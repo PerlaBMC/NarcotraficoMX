@@ -2,6 +2,7 @@ import styles from "./cardCedula.module.css";
 import { useContext, useEffect } from "react";
 import OrgContext from "../../Context/productContext";
 import { useParams } from "react-router-dom";
+import { GiClick } from "react-icons/gi";
 
 const CardCedula = () => {
 	const { getOrganizacion, org } = useContext(OrgContext);
@@ -18,7 +19,7 @@ const CardCedula = () => {
 					<div className={styles.card}>
 						<div className={styles.frontContent}>
 							<img src={celula.imagenDeAgrupación} alt="Imagen célula criminal" />
-							<p>{celula.nombreDeAgrupacion}</p>
+							<p>{celula.nombreDeAgrupacion} <GiClick className={styles.clickCard}/></p>
 						</div>
 						<div className={styles.content}>
 							<p>{celula.descipcionDeAgrupacion}</p>

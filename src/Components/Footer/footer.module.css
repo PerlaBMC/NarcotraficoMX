@@ -1,8 +1,8 @@
 .footerContainer {
-    background:repeating-linear-gradient(black, rgba(41, 40, 40, 0.862)); 
+    background: repeating-linear-gradient(black, rgba(41, 40, 40, 0.862));
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    padding: 20px 10%; 
+    padding: 20px 10%;
     align-items: center;
     justify-content: center;
 }
@@ -30,8 +30,8 @@
 
 .DirectorioPortales p,
 .privacidad p {
-font-size: 20px;
-letter-spacing: 2px;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 
 
@@ -41,16 +41,45 @@ letter-spacing: 2px;
 }
 
 .instagram {
-color: lightsalmon ;
-font-size: 40px;
+    color: lightsalmon;
+    font-size: 40px;
 }
 
 .tiktok {
-    color: ghostwhite ;
+    color: ghostwhite;
     font-size: 40px;
 }
 
 .youtube {
-    color: red ;
+    color: red;
     font-size: 40px;
+}
+
+@media (min-width: 701px) and (max-width: 970px) {
+    .footerContainer {
+        padding: 0%;
+    }
+}
+
+@media (width <=700px) {
+    .footerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .DirectorioPortales,
+    .privacidad {
+        width: 100%;
+    }
+
+    .DirectorioPortales p,
+    .privacidad p {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+
+
 }

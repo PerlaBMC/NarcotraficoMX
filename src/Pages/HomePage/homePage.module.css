@@ -35,4 +35,56 @@
     font-size: 40px;
     padding-left: 30px;
     letter-spacing: 5px;
+    text-align: center;
+    padding: 0%;
+}
+
+@media (min-width: 970px) and (max-width: 1250px) {
+    .BannerHomePage {
+        grid-template-columns: 60% 40%;
+    }
+
+    .descripcion {
+        padding: 0px 0px 0px 50px;
+        font-size: 15px;
+    }
+
+    .TituloHome h1 {
+        font-size: 37px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 970px) {
+    .BannerHomePage {
+        grid-template-columns: 60% 40%;
+    }
+
+    .descripcion {
+        padding: 0px 0px 0px 50px;
+        font-size: 15px;
+        line-height: inherit;
+    }
+
+    .TituloHome h1 {
+        font-size: 32px;
+    }
+}
+
+@media (width <=700px) {
+    .BannerHomePage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .descripcion {
+        padding: 0% 5%;
+        font-size: 18px;
+        line-height: inherit;
+    }
+    .TituloHome h1 {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
 }

@@ -1,8 +1,8 @@
 .organigramaContainer {
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-gap: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 60px;
 }
 
 .enlacePerfil {
@@ -37,13 +37,69 @@ gap: 60px;
 .nombreMiembro h2,
 .nombreMiembro h3,
 .nombreMiembro p {
-color: aliceblue;
-font-size: 15px;
-text-align: center;
-width: 100%;
-padding: 0%;
+    color: aliceblue;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    padding: 0%;
 }
 
 .nombreMiembro h3 {
     color: brown;
+}
+
+
+@media (min-width: 970px) and (max-width: 1250px) {}
+
+@media (min-width: 750px) and (max-width: 970px) {
+    .organigramaContainer {
+        gap: 40px;
+    }
+
+    .cardMiembro {
+        width: 200px;
+        height: 280px;
+    }
+
+    .fotoMiembro {
+        height: 180px;
+    }
+
+    .nombreMiembro {
+        height: 100px;
+    }
+
+    .nombreMiembro h2,
+    .nombreMiembro h3,
+    .nombreMiembro p {
+        font-size: 12px;
+        margin: 0%;
+    }
+}
+
+@media (width <=749px) {
+    .organigramaContainer {
+        gap: 40px;
+    }
+
+    .cardMiembro {
+        width: 170px;
+        height: 250px;
+    }
+
+    .fotoMiembro {
+        height: 150px;
+    }
+
+    .nombreMiembro {
+        height: 100px;
+    }
+
+    .nombreMiembro h2,
+    .nombreMiembro h3,
+    .nombreMiembro p {
+        font-size: 11px;
+        margin: 0%;
+    }
+
 }
