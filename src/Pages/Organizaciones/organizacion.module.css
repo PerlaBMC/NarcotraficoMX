@@ -19,6 +19,7 @@ visibility: hidden;
 
 .mapaOrg img {
     width: 100%;
+    padding: 0px 30px 0px 0px;
 }
 
 .infOrg p {
@@ -122,8 +123,11 @@ visibility: hidden;
     .infOrg p{
         columns: 1;
         line-height: inherit;
-        padding: 0% 5%;
+        padding: 0% 10%;
         margin-bottom: 20px;
+        font-size: medium;
+        word-spacing: -3px;
+        word-break: break-word;
     }
 
     .organigramaContainer h3 {

@@ -79,12 +79,20 @@
     }
 
     .descripcion {
-        padding: 0% 5%;
+        padding: 0% 10%;
         font-size: 18px;
         line-height: inherit;
     }
+
+    .descripcion p {
+        word-break: break-word;
+        word-spacing: -3px;
+        font-size: 17px;
+    }
+
     .TituloHome h1 {
         font-size: 25px;
         letter-spacing: 2px;
+        padding: 0px 15px;
     }
 }

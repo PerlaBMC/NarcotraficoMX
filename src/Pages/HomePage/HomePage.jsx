@@ -60,10 +60,10 @@ const HomePage = () => {
 						nacional
 					</h1>
 				</section>
-				<section>
+				<section id="mapa">
 					<MapaMexico />
 				</section>
-				<section>
+				<section id="orgs">
 					<Organizaciones />
 				</section>
 				<section>

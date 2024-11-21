@@ -9,6 +9,7 @@ import Perfil from "../Pages/Perfiles/Perfil";
 import PoliticasDePrivacidad from "../Pages/PoliticasDePrivacidad/PoliticasDePrivacidad";
 import NoticiaPage from "../Pages/NoticiaPage/NoticiaPage";
 import NoticieroPage from "../Pages/NoticieroPage/NoticieroPage";
+import NotFoundPage from "../Pages/NotFoundPage/NotFoundPage";
 
 
 
@@ -25,6 +26,7 @@ const AppRouter = () => {
 				<Route path="/Politicas" element={<PoliticasDePrivacidad/>}/>
 				<Route path="/Noticia/:id" element={<NoticiaPage/>}/>
 				<Route path="/Noticiero" element={<NoticieroPage/>}/>
+				<Route path="/*" element={<NotFoundPage />} />
 			</Routes>
             <Footer/>
 		</BrowserRouter>

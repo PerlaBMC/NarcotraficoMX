@@ -1,11 +1,13 @@
 .footerContainer {
     background: repeating-linear-gradient(black, rgba(41, 40, 40, 0.862));
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    padding: 20px 10%;
+    padding: 10px 20px;
     align-items: center;
     justify-content: center;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
 }
+
+
 
 .footerContainer div {
     display: flex;
@@ -30,8 +32,11 @@
 
 .DirectorioPortales p,
 .privacidad p {
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 2px;
+    font-family: "Bebas Neue";
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -55,9 +60,35 @@
     font-size: 40px;
 }
 
+.avisoLegal {
+    width: 100%;
+    font-size: 15px;
+    color: aliceblue;
+    text-align: justify;
+    padding: 0px 50px;
+    font-family: "Bebas Neue";
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.avisoLegal em,
+.icono {
+    color: red;
+}
+
 @media (min-width: 701px) and (max-width: 970px) {
     .footerContainer {
+        grid-template-columns: 35% 30% 35%;
+    }
+
+    .footerContainer {
         padding: 0%;
+    }
+
+    .avisoLegal {
+        padding: 0px 10px;
+        font-size: 12px;
     }
 }
 
@@ -80,6 +111,14 @@
         letter-spacing: 2px;
     }
 
+    .avisoLegal {
+        padding: 0px 10px;
+    }
+
+    .avisoLegal p {
+        word-break: break-word;
+        word-spacing: -4px;
+    }
 
 
 }

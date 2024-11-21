@@ -73,17 +73,19 @@
     @media (width <=749px) {
  
         .noticiaPageContainer h3 {
-            font-size: 20px;
+            font-size: 19px;
             padding: 0%;
             text-align: center;
         }
 
         .noticiaPageContainer p{
             font-size: 15px;
+            word-break: break-word;
+            padding: 0px 5px;
         }
 
         .noticiaPageContainer h5 {
-            font-size: 20px;
+            font-size: 18px;
             text-align: center;
         }
 

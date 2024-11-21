@@ -19,9 +19,9 @@ const NavBar = () => {
 					</a>
 				</section>
 				<section className={styles.menuNavBar}>
-					<a href="">Mapa</a>
+					<a href="#mapa">Mapa</a>
 					<div className={styles.dropDownNavBar}>
-						<a href="">Organizaciones</a>
+						<a href="#orgs">Organizaciones</a>
 						<div className={styles.dropDownContent}>
 							{organizaciones.map((org) => (
 								<Link to={`/Org/${org.id}`}>
