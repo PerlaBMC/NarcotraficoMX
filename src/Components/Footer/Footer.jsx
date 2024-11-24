@@ -33,10 +33,10 @@ const Footer = () => {
 					<a href="/">
 						<FaInstagram className={styles.instagram} />
 					</a>
-					<a href="">
+					<a href="https://www.tiktok.com/@narcotrafico.mx" target="_blanket">
 						<FaTiktok className={styles.tiktok} />
 					</a>
-					<a href="">
+					<a href="https://www.youtube.com/@NarcotraficoMX" target="_blanket">
 						<FaYoutube className={styles.youtube} />
 					</a>
 				</div>
