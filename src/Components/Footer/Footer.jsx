@@ -3,6 +3,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaTiktok, FaYoutube } from "react-icons/fa";
 import { MdOutlinePrivacyTip } from "react-icons/md";
 import { MdMovie } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -17,12 +18,12 @@ const Footer = () => {
 					</p>
 				</div>
 				<div className={styles.DirectorioPortales}>
-					<a href="/Politicas">
+					<Link to="/Politicas">
 						<p>
 							<MdOutlinePrivacyTip className={styles.icono} /> Políticas de
 							Privacidad
 						</p>
-					</a>
+					</Link>
 					<a href="https://crimeflix.vercel.app/" target="_blanket">
 						<p>
 							<MdMovie className={styles.icono} /> Crimeflix
