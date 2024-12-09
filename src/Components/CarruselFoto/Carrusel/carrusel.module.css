@@ -8,6 +8,47 @@
     height: 100%;
 }
 
+.carruselPoliticasContainer {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel {
+    width: 800px;
+}
+
+.carruselSeccion {
+    height: 400px;
+    background: url("https://res.cloudinary.com/dujrua0vo/image/upload/v1733622540/Disen%CC%83o_sin_ti%CC%81tulo_7_gegtgt.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 20px;
+}
+
+.carruselSeccion img {
+    width: 100%;
+}
+
+.carruselTexto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.716);
+    height: 300px;
+    border-radius: 10px;
+    padding: 3%;       
+}
+
+.carruselTexto h3 {
+width: 100%;
+font-family: "Bebas Neue";
+    font-weight: 400;
+    font-style: normal;
+}
+
 @media (min-width: 970px) and (max-width: 1250px) {
 .carruselItem {
     padding: 0px 20px;
@@ -29,4 +70,13 @@
     .carruselItem {
         padding: 0%;
     }
+
+.carruselSeccion {
+    border-radius: 0%;
+}
+
+.carruselTexto p {
+font-size: 16px;
+padding: 0%;
+}
 }

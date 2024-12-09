@@ -1,0 +1,93 @@
+.misionContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: url("https://i.pinimg.com/736x/8c/55/1d/8c551d05653f810b9080e74e8dd814b4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+}
+
+.seccionMision,
+.seccionVision {
+    margin: 5% 10%;
+    background-color: rgba(0, 0, 0, 0.659);
+    border-radius: 10px;
+}
+
+.seccionMision:hover,
+.seccionVision:hover {
+    border: 1px solid yellow;
+    box-shadow: yellow 0px 0px 25px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.seccionMision h5,
+.seccionVision h5 {
+    color: yellow;
+    text-align: center;
+    margin: 20px 0px;
+    width: 100%;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.seccionMision p,
+.seccionVision p {
+    color: gainsboro;
+    text-align: justify;
+    padding: 10px 70px;
+    font-size: 20px;
+} 
+
+
+@media (min-width: 970px) and (max-width: 1250px) {
+    .seccionMision p,
+    .seccionVision p {
+        padding: 3px 30px;
+        font-size: 16px;
+        word-spacing: -2px;
+    } 
+}
+
+@media (min-width: 701px) and (max-width: 970px) {
+    .seccionMision,
+    .seccionVision {
+        margin: 3%;
+    }
+
+    .seccionMision p,
+    .seccionVision p {
+        padding: 0px 25px;
+        font-size: 15px;
+    }    
+}
+
+@media (width <=700px) {
+    .misionContainer {
+        display: block;
+        background-repeat: repeat;
+        padding: 5px;
+    }
+
+    .seccionMision,
+    .seccionVision {
+        margin: 2% 5%;
+    }
+
+    .seccionMision h5,
+    .seccionVision h5 {
+        padding: 10px 0px 0px 0px;
+        margin: 0%;
+    }    
+
+    .seccionMision p,
+    .seccionVision p {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}

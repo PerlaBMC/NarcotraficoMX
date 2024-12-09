@@ -2,11 +2,21 @@
     background-color: black;
 }
 
+.HomePageContainer section {
+    padding-top: 2%;
+}
+
 .BannerHomePage {
     background-color: black;
-    color: azure;
+    color: gainsboro;
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .descripcion {
@@ -27,16 +37,24 @@
     width: 100%;
 }
 
-.HomePageContainer h1 {
+.HomePageContainer h2 {
     font-family: "Bebas Neue";
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     color: whitesmoke;
-    font-size: 40px;
+    font-size: 35px;
     padding-left: 30px;
     letter-spacing: 5px;
     text-align: center;
-    padding: 0%;
+    padding: 15px 150px;
+    text-shadow: whitesmoke 0px 0px 25px;
+}
+
+.HomePageContainer p {
+    color: gainsboro;
+    padding: 0px 5%;
+    font-size: 18px;
+    text-align: justify;
 }
 
 @media (min-width: 970px) and (max-width: 1250px) {
@@ -59,18 +77,29 @@
         grid-template-columns: 60% 40%;
     }
 
+    .BannerHomePage p {
+        font-size: 14px;
+        padding: 0%;
+    }
+
     .descripcion {
         padding: 0px 0px 0px 50px;
         font-size: 15px;
         line-height: inherit;
     }
 
-    .TituloHome h1 {
+    .HomePageContainer h2 {
         font-size: 32px;
+        padding: 15px 0px;
     }
 }
 
 @media (width <=700px) {
+    .HomePageContainer p {
+        padding: 0% 10%;
+        font-size: 17px;
+    }
+
     .BannerHomePage {
         display: flex;
         justify-content: center;
@@ -88,11 +117,12 @@
         word-break: break-word;
         word-spacing: -3px;
         font-size: 17px;
+        padding: 0%;
     }
 
-    .TituloHome h1 {
+    .HomePageContainer h2 {
         font-size: 25px;
         letter-spacing: 2px;
-        padding: 0px 15px;
+        padding: 15px;
     }
 }

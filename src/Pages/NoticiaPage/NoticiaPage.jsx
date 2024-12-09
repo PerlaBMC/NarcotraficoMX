@@ -42,10 +42,10 @@ const NoticiaPage = () => {
 						<h5>{noticia.Noticia.subtituloSeis} </h5>
 						<p>{noticia.Noticia.parrafoSeis}</p>
 						<h5>{noticia.Noticia.subtituloSiete} </h5>
-						{typeof noticia.ImagenTres === "string" &&
+						{/*{typeof noticia.ImagenTres === "string" &&
 						noticia.ImagenTres.trim() !== "" ? (
 							<Crimeflix video={noticia.ImagenTres} />
-						) : null}
+						) : null}*/}
 					</div>
 				</div>
 			)}

@@ -10,6 +10,8 @@ import PoliticasDePrivacidad from "../Pages/PoliticasDePrivacidad/PoliticasDePri
 import NoticiaPage from "../Pages/NoticiaPage/NoticiaPage";
 import NoticieroPage from "../Pages/NoticieroPage/NoticieroPage";
 import NotFoundPage from "../Pages/NotFoundPage/NotFoundPage";
+import AcercaDeNosotros from "../Components/AcercaDeNosotros/AcercaDeNosotros";
+import TerminosYCondiciones from "../Components/AcercaDeNosotros/TerminosYCondiciones";
 
 
 
@@ -26,6 +28,8 @@ const AppRouter = () => {
 				<Route path="/Politicas" element={<PoliticasDePrivacidad/>}/>
 				<Route path="/Noticia/:id" element={<NoticiaPage/>}/>
 				<Route path="/Noticiero" element={<NoticieroPage/>}/>
+				<Route path="/AboutUs" element={<AcercaDeNosotros/>}/>
+				<Route path="/Terminos" element={<TerminosYCondiciones/>}/>
 				<Route path="/*" element={<NotFoundPage />} />
 			</Routes>
             <Footer/>

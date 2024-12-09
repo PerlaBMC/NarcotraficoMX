@@ -27,7 +27,7 @@
     text-align: center;
     line-height: 30px;
     text-decoration: none;
-    color: aliceblue;
+    color: gainsboro;
 }
 
 .DirectorioPortales p,
@@ -63,7 +63,7 @@
 .avisoLegal {
     width: 100%;
     font-size: 15px;
-    color: aliceblue;
+    color: gainsboro;
     text-align: justify;
     padding: 0px 50px;
     font-family: "Bebas Neue";

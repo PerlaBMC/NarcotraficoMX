@@ -4,6 +4,7 @@ import { FaTiktok, FaYoutube } from "react-icons/fa";
 import { MdOutlinePrivacyTip } from "react-icons/md";
 import { MdMovie } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { MdOutlineSystemSecurityUpdateWarning } from "react-icons/md";
 
 const Footer = () => {
 	return (
@@ -24,11 +25,15 @@ const Footer = () => {
 							Privacidad
 						</p>
 					</Link>
-					<a href="https://crimeflix.vercel.app/" target="_blanket">
+					{/*<a href="https://crimeflix.vercel.app/" target="_blanket">
 						<p>
 							<MdMovie className={styles.icono} /> Crimeflix
 						</p>
-					</a>
+					</a>*/}
+					<Link to={"/Terminos"}>
+					<p>
+						<MdOutlineSystemSecurityUpdateWarning  className={styles.icono}/> Terminos y Condiciones</p>
+					</Link>
 				</div>
 				<div className={styles.redes}>
 					<a href="/">
