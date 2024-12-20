@@ -15,11 +15,13 @@ visibility: hidden;
 .logoORg img {
     padding: 30px;
     width: 100%;
+    object-fit: contain;
 }
 
 .mapaOrg img {
     width: 100%;
     padding: 0px 30px 0px 0px;
+    object-fit: contain;
 }
 
 .infOrg p {
@@ -41,14 +43,22 @@ visibility: hidden;
 
 .organigramaContainer h3 {
     font-family: "Bebas Neue";
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     color: whitesmoke;
-    font-size: 60px;
+    font-size: 55px;
     padding-left: 30px;
     letter-spacing: 5px;
-    width: 100%;
     text-align: center;
+    padding: 15px 150px;
+    text-shadow: whitesmoke 0px 0px 25px;
+}
+
+.organigramaContainer p{
+    color: gainsboro;
+    text-align: justify;
+    padding: 0% 2%;
+    font-size: large;
 }
 
 .containerCelulas h3 {
@@ -133,5 +143,9 @@ visibility: hidden;
     .organigramaContainer h3 {
         padding: 0%;
         font-size: 50px;
+    }
+
+    .mapaOrg img {
+        padding: 0%;
     }
 }

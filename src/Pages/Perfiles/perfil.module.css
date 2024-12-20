@@ -95,6 +95,15 @@
     border-radius: 10px;
 }
 
+.bibliografia h4 {
+    font-size: 15px;
+}
+
+.bibliografia p {
+font-size: 12px;
+}
+
+
 @media (min-width: 970px) and (max-width: 1250px) {
     .fichaDeDatos {
         width: 480px;

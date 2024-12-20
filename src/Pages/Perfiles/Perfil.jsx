@@ -19,6 +19,7 @@ const Perfil = () => {
 			{miembro.id && (
 				<div className={styles.perfilContainer}>
 					<section className={styles.datosGenerales}>
+
 						<div className={styles.carruselFotos}>
 							<CarouselFoto />
 						</div>
@@ -91,10 +92,12 @@ const Perfil = () => {
 							<p> {miembro.HitoriaDeVida.Relato.Descripción.parrafoSiete} </p>
 							<h4>{miembro.HitoriaDeVida.Relato.Descripción.subtituloOcho} </h4>
 							<p> {miembro.HitoriaDeVida.Relato.Descripción.parrafoOcho} </p>
-							<h4>
+							<div className={styles.bibliografia}>
+							<h4 className={styles.bibliografia}>
 								{miembro.HitoriaDeVida.Relato.Descripción.subtituloNueve}{" "}
 							</h4>
-							<p> {miembro.HitoriaDeVida.Relato.Descripción.parrafoNueve} </p>
+							<p className={styles.bibliografiaParrafo}> {miembro.HitoriaDeVida.Relato.Descripción.parrafoNueve} </p>
+							</div>
 						</div>
 					</section>
 				</div>

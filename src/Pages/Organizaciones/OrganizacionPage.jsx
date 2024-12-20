@@ -21,11 +21,14 @@ const OrganizacionPage = () => {
 					<div className={styles.OrganizacionPageContainer}>
 						<section className={styles.bannerORg}>
 							<h2>{org.nombreOrganizacion}</h2>
-							<div className={styles.logoORg}> 
+							<div className={styles.logoORg}>
 								<img src={org.imagen} alt="Logo de Org" />
 							</div>
 							<div className={styles.mapaOrg}>
-								<img src={org.mapaExpansionTerritorial} alt="Mapa de expansión territorial" />
+								<img
+									src={org.mapaExpansionTerritorial}
+									alt="Mapa de expansión territorial"
+								/>
 							</div>
 						</section>
 						<section className={styles.infOrg}>
@@ -33,14 +36,25 @@ const OrganizacionPage = () => {
 						</section>
 						<section className={styles.organigramaContainer}>
 							<h3>Organigrama</h3>
+							<p>
+								En esta sección encontrarás información detallada y estructurada
+								sobre la trayectoria de los principales líderes del crimen
+								organizado. Analizamos factores de riesgo, patrones de conducta
+								y contextos sociales que contribuyeron a su vinculación con
+								actividades delictivas, con el objetivo de identificar señales
+								de alerta y promover estrategias de prevención.
+							</p>
 							{/* Pasamos el nombre de la organización como prop */}
 							<Organigrama nombreOrganizacion={org.nombreOrganizacion} />
 						</section>
 						<section className={styles.containerCelulas}>
-							<TituloDeSeccion titulo="Zona de influencia por células"/>
-							<img src={org.celulasCriminales.mapaDeExpansionTerritorial} alt="Mapa expansión territorial por células" />
+							<TituloDeSeccion titulo="Zona de influencia por células" />
+							<img
+								src={org.celulasCriminales.mapaDeExpansionTerritorial}
+								alt="Mapa expansión territorial por células"
+							/>
 							<div className={styles.cedulaCardsContainer}>
-								<CardCedula/>
+								<CardCedula />
 							</div>
 						</section>
 					</div>
@@ -51,4 +65,3 @@ const OrganizacionPage = () => {
 };
 
 export default OrganizacionPage;
-               

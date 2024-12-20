@@ -57,6 +57,7 @@
     text-align: justify;
 }
 
+
 @media (min-width: 970px) and (max-width: 1250px) {
     .BannerHomePage {
         grid-template-columns: 60% 40%;
