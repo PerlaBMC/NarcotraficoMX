@@ -79,7 +79,7 @@
 
 @media (width <=749px) {
     .organigramaContainer {
-        gap: 40px;
+        gap: 10px;
     }
 
     .cardMiembro {

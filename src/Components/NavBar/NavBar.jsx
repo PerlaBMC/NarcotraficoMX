@@ -22,6 +22,8 @@ const NavBar = () => {
         </a>
       </section>
       <section className={`${styles.menuNavBar} ${menuOpen ? styles.open : ""}`}>
+      <Link to={"/AboutUs"}>Acerca de nosotros</Link>
+        <Link to={"Noticiero"}>Noticias</Link>
         <div className={styles.dropDownNavBar}>
           <a>Organizaciones</a>
           <div className={styles.dropDownContent}>
@@ -35,8 +37,6 @@ const NavBar = () => {
             ))}
           </div>
         </div>
-        <Link to={"Noticiero"}>Noticias</Link>
-        <Link to={"/AboutUs"}>Acerca de nosotros</Link>
       </section>
 	  <section className={styles.buttonMobile}>
 	  <button className={styles.menuButton} onClick={toggleMenu}>

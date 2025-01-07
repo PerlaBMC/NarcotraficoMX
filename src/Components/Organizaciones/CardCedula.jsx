@@ -2,7 +2,9 @@ import styles from "./cardCedula.module.css";
 import { useContext, useEffect } from "react";
 import OrgContext from "../../Context/productContext";
 import { useParams } from "react-router-dom";
-import { GiClick } from "react-icons/gi";
+import { FaBookDead } from "react-icons/fa";
+import { PiMouseScrollFill } from "react-icons/pi";
+import { GiHalfDead } from "react-icons/gi";
 
 const CardCedula = () => {
 	const { getOrganizacion, org } = useContext(OrgContext);
@@ -10,20 +12,29 @@ const CardCedula = () => {
 
 	useEffect(() => {
 		getOrganizacion(id);
-	}, [getOrganizacion, id]); 
+	}, [getOrganizacion, id]);
 
 	const renderCard = (celula) => {
 		return (
-			celula && celula.imagenDeAgrupación && celula.nombreDeAgrupacion && celula.descipcionDeAgrupacion && (
+			celula &&
+			celula.imagenDeAgrupación &&
+			celula.nombreDeAgrupacion &&
+			celula.descipcionDeAgrupacion && (
 				<div className={styles.cardContainer}>
-					<div className={styles.card}>
-						<div className={styles.frontContent}>
-							<img src={celula.imagenDeAgrupación} alt="Imagen célula criminal" />
-							<p>{celula.nombreDeAgrupacion} <GiClick className={styles.clickCard}/></p>
-						</div>
-						<div className={styles.content}>
-							<p>{celula.descipcionDeAgrupacion}</p>
-						</div>
+					<div className={styles.model}>
+						<article className={styles.modalContainer}>
+							<header className={styles.modalContainerHeader}>
+								<span className={styles.modalContainerTitle}>
+									<GiHalfDead />
+									{celula.nombreDeAgrupacion}
+								</span>
+								<PiMouseScrollFill className={styles.iconScroll}/>
+							</header>
+							<section className={styles.modalContainerBody}>
+								{celula.descipcionDeAgrupacion}
+							</section>
+							<footer className={styles.modalContainerFooter}></footer>
+						</article>
 					</div>
 				</div>
 			)
@@ -46,6 +57,6 @@ const CardCedula = () => {
 			)}
 		</>
 	);
-}
+};
 
 export default CardCedula;

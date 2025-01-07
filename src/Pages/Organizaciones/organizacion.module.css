@@ -54,11 +54,13 @@ visibility: hidden;
     text-shadow: whitesmoke 0px 0px 25px;
 }
 
-.organigramaContainer p{
+.organigramaContainer p,
+.cedulaCardsContainer p{
     color: gainsboro;
     text-align: justify;
     padding: 0% 2%;
     font-size: large;
+    width: 100%;
 }
 
 .containerCelulas h3 {
@@ -75,6 +77,7 @@ visibility: hidden;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    flex-wrap: wrap;
 }
 
 @media (min-width: 970px) and (max-width: 1250px) {
@@ -89,7 +92,7 @@ visibility: hidden;
         padding: 5%;
     }
 
-    .infOrg p{
+    .infOrg p {
         columns: 1;
         line-height: inherit;
         padding: 0% 5%;
@@ -103,6 +106,10 @@ visibility: hidden;
 }
 
 @media (width <=749px) {
+    .mapaOrg {
+        padding: 5%;
+    }
+
     .bannerORg {
         display: flex;
         flex-wrap: wrap;
@@ -130,13 +137,20 @@ visibility: hidden;
         visibility: hidden;
     }
 
-    .infOrg p{
+    .cedulaCardsContainer {
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .infOrg p,
+    .organigramaContainer p,
+    .cedulaCardsContainer p {
         columns: 1;
         line-height: inherit;
-        padding: 0% 10%;
+        padding: 0% 8%;
         margin-bottom: 20px;
         font-size: medium;
-        word-spacing: -3px;
+        word-spacing: -1px;
         word-break: break-word;
     }
 

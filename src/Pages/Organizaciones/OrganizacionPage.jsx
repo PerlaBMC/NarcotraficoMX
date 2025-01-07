@@ -54,6 +54,17 @@ const OrganizacionPage = () => {
 								alt="Mapa expansión territorial por células"
 							/>
 							<div className={styles.cedulaCardsContainer}>
+								<p>
+									Algunas de las células criminales más reconocidas asociadas
+									con el {org.nombreOrganizacion} se han expandido a lo largo del
+									territorio nacional. Desde un enfoque criminológico, es
+									fundamental analizar la asociación entre estas
+									microorganizaciones, ya que su colaboración fortalece al grupo
+									delictivo en su conjunto. Además, cualquier conflicto interno
+									entre estas células podría desencadenar enfrentamientos
+									significativos, con repercusiones importantes para la
+									seguridad local y nacional.
+								</p>
 								<CardCedula />
 							</div>
 						</section>

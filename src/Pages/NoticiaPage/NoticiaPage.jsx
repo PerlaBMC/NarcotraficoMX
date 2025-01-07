@@ -43,6 +43,26 @@ const NoticiaPage = () => {
 						<p>{noticia.Noticia.parrafoSeis}</p>
 						<h5>{noticia.Noticia.subtituloSiete} </h5>
 						<p>{noticia.Noticia.parrafoSiete}</p>
+						<div className={styles.bibliografia}>
+							<h4 className={styles.bibliografia}>Fuentes de consulta</h4>
+							<p className={styles.bibliografiaParrafo}>
+								{noticia.Noticia.fuentesDeConsulta}
+							</p>
+							<div className={styles.datosDeElaboracion}>
+								<div className={styles.autoria}>
+									<h4>Autoria</h4>
+									<p className={styles.bibliografiaParrafo}>
+										{noticia.Noticia.autoria}
+									</p>
+								</div>
+								<div className={styles.fecha}>
+									<h4>Fecha de nota</h4>
+									<p className={styles.bibliografiaParrafo}>
+										{noticia.Noticia.fechaDeActualizacion}
+									</p>
+								</div>
+							</div>
+						</div>
 						{/*{typeof noticia.ImagenTres === "string" &&
 						noticia.ImagenTres.trim() !== "" ? (
 							<Crimeflix video={noticia.ImagenTres} />

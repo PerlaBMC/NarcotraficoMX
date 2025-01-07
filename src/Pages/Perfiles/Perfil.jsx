@@ -92,11 +92,23 @@ const Perfil = () => {
 							<p> {miembro.HitoriaDeVida.Relato.Descripción.parrafoSiete} </p>
 							<h4>{miembro.HitoriaDeVida.Relato.Descripción.subtituloOcho} </h4>
 							<p> {miembro.HitoriaDeVida.Relato.Descripción.parrafoOcho} </p>
+							<h4>{miembro.HitoriaDeVida.Relato.Descripción.subtituloNueve} </h4>
+							<p> {miembro.HitoriaDeVida.Relato.Descripción.parrafoNueve} </p>
 							<div className={styles.bibliografia}>
 							<h4 className={styles.bibliografia}>
-								{miembro.HitoriaDeVida.Relato.Descripción.subtituloNueve}{" "}
+							Fuentes de consulta
 							</h4>
-							<p className={styles.bibliografiaParrafo}> {miembro.HitoriaDeVida.Relato.Descripción.parrafoNueve} </p>
+							<p className={styles.bibliografiaParrafo}> {miembro.HitoriaDeVida.Relato.Descripción.fuentesDeConsulta} </p>
+							<div className={styles.datosDeElaboracion}>
+							<div className={styles.autoria}>
+							<h4>Autoria</h4>
+							<p className={styles.bibliografiaParrafo}> {miembro.HitoriaDeVida.Relato.Descripción.autoria} </p>
+							</div>
+							<div className={styles.fecha}>
+							<h4>Fecha de actualizacion</h4>
+							<p className={styles.bibliografiaParrafo}> {miembro.HitoriaDeVida.Relato.Descripción.fechaDeActualizacion} </p>
+							</div>
+							</div>
 							</div>
 						</div>
 					</section>
