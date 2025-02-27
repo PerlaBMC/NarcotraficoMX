@@ -4,7 +4,7 @@
 
 .error404,
 .NotFound,
-.botonRegresar  {
+.botonRegresar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,9 +15,9 @@
     width: 15%;
 }
 
-.error404 p { 
-color: white;
-font-size: 200px;
+.error404 p {
+    color: white;
+    font-size: 200px;
 }
 
 .NotFound p {
@@ -29,9 +29,42 @@ font-size: 200px;
 .NotFound em {
     color: red;
 }
+
 .botonRegresar a {
     color: red;
     font-size: 50px;
-    text-decoration:underline;
+    text-decoration: underline;
     text-transform: uppercase;
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+.notFounPage {
+    height: 550px;
+}
+    
+.error404 p{
+    font-size: 120px;
+}
+
+.NotFound p,
+.botonRegresar a {
+    font-size: 40px;
+ }
+
+}
+
+@media (width <= 499px) {
+    .notFounPage {
+        height: auto;
+        padding: 10%;
+    }
+.error404 p {
+    font-size: 100px;
+}
+
+.NotFound p,
+.botonRegresar a {
+    font-size: 40px;
+}
+
 }
