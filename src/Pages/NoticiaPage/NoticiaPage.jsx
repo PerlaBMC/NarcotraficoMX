@@ -66,7 +66,7 @@ const NoticiaPage = () => {
 						{/*{typeof noticia.ImagenTres === "string" &&
 						noticia.ImagenTres.trim() !== "" ? (
 							<Crimeflix video={noticia.ImagenTres} />
-						) : null}*/}
+						) : null} */}
 					</div>
 				</div>
 			)}
@@ -74,4 +74,4 @@ const NoticiaPage = () => {
 	);
 };
 
-export default NoticiaPage;
+export default NoticiaPage

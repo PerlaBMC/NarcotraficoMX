@@ -36,7 +36,7 @@ const Footer = () => {
 					</Link>
 				</div>
 				<div className={styles.redes}>
-					<a href="/">
+					<a href="https://www.instagram.com/narcotrafico.mx/profilecard/?igsh=dnc5dW94MG9nN3dk" target="_blanket">
 						<FaInstagram className={styles.instagram} />
 					</a>
 					<a href="https://www.tiktok.com/@narcotrafico.mx" target="_blanket">
